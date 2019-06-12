@@ -7,4 +7,6 @@ Install [docker-composer](https://docs.docker.com/compose/install/) then run:
 docker-compose up
 ```
 
-Open [http://localhost:8090](http://localhost:8090) to view it in the browser.
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+The API is accessible on [http://localhost:3000](http://localhost:3000).
