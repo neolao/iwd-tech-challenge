@@ -4,6 +4,7 @@ services:
     image: nginx:stable
     depends_on:
       - php
+      - app
     ports:
       - "8090:80"
     volumes:
@@ -23,8 +24,11 @@ services:
       - ./api:/app
     command: composer install
 
-  node:
+  app:
     image: node:12
+    expose:
+      - "3000"
     volumes:
-      - ./app:/project
-
+      - ./app:/app
+    working_dir: /app
+    command: npm start
