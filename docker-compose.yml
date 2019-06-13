@@ -41,3 +41,9 @@ services:
     working_dir: /app
     command: npm start
 
+  node:
+    image: node:12
+    volumes:
+      - ./app:/app
+    working_dir: /app
+
