@@ -1,5 +1,4 @@
 <?php
-
 declare(strict_types=1);
 
 define('ROOT_PATH', realpath('.'));
@@ -15,10 +14,29 @@ use Silex\Application;
 
 $app = new Application();
 $app['debug'] = true;
-$app->after(function (Request $request, Response $response) {
+$app->after(function(Request $request, Response $response) {
     $response->headers->set('Access-Control-Allow-Origin', '*');
 });
-$app->get('/', function () use ($app) {
+
+$app->get('/', function() {
     return 'Status OK';
 });
+
+$app->get('/surveys', function() use ($app) {
+  $surveys = [];
+
+  $directoryPath = ROOT_PATH.'/data/survey';
+  foreach (glob($directoryPath.'/*.json') as $filePath) {
+    $json = file_get_contents($filePath);
+    $survey = json_decode($json, true);
+    $surveys[] = [
+      'id' => $survey['id'],
+      'name' => $survey['name'],
+      'code' => $survey['code'],
+    ];
+  }
+
+  return $app->json($surveys);
+});
+
 $app->run();
