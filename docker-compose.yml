@@ -1,8 +1,9 @@
 version: "3.7"
 services:
-  nginx:
+  server:
     image: nginx:stable
     depends_on:
+      - composer
       - phpfpm
       - app
     expose:

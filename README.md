@@ -4,7 +4,7 @@ IWD Tech challenge
 Install [docker-composer](https://docs.docker.com/compose/install/) then run:
 
 ```bash
-docker-compose up
+docker-compose up server
 ```
 
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.

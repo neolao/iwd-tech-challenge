@@ -9,7 +9,7 @@ final class SurveysTest extends TestCase
   public function testReturnSurveys(): void
   {
     $client = new Client();
-    $response = $client->request('GET', 'http://nginx/api/surveys');
+    $response = $client->request('GET', 'http://server/api/surveys');
 
     $this->assertEquals('200', $response->getStatusCode());
 
