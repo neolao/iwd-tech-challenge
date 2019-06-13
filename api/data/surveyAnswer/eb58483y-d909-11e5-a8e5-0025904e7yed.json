@@ -1,7 +1,6 @@
 {
-  "id": "eb58493e-d909-11e5-a8e5-0025904e7yed",
-  "name": "Chartres",
-  "code": "XX2",
+  "id": "eb58483y-d909-11e5-a8e5-0025904e7yed",
+  "surveyCode": "XX3",
   "questions": [
     {
       "type": "qcm",
@@ -26,7 +25,7 @@
       "type": "date",
       "label": "What is the visit date?",
       "options": null,
-      "answer": "2017-10-25T12:04:50.000Z"
+      "answer": "2017-09-25T12:04:50.000Z"
     }
   ]
 }

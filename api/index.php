@@ -29,11 +29,7 @@ $app->get('/surveys', function() use ($app) {
   foreach (glob($directoryPath.'/*.json') as $filePath) {
     $json = file_get_contents($filePath);
     $survey = json_decode($json, true);
-    $surveys[] = [
-      'id' => $survey['id'],
-      'name' => $survey['name'],
-      'code' => $survey['code'],
-    ];
+    $surveys[] = $survey;
   }
 
   return $app->json($surveys);

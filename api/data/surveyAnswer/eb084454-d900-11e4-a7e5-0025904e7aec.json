@@ -1,7 +1,6 @@
 {
-  "id": "eb58443e-d909-11e5-a8e5-0025904e7yed",
-  "name": "Chartres",
-  "code": "XX2",
+  "id": "eb084454-d900-11e4-a7e5-0025904e7aec",
+  "surveyCode": "XX1",
   "questions": [
     {
       "type": "qcm",
@@ -14,19 +13,19 @@
         "Product 5",
         "Product 6"
       ],
-      "answer": [true, true, true, true, true, true]
+      "answer": [false, true, true, false, true, false]
     },
     {
       "type": "numeric",
       "label": "Number of products?",
       "options": null,
-      "answer": 6200
+      "answer": 670
     },
     {
       "type": "date",
       "label": "What is the visit date?",
       "options": null,
-      "answer": "2017-09-25T12:04:50.000Z"
+      "answer": "2017-06-09T00:00:00.000Z"
     }
   ]
 }

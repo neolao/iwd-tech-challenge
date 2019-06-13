@@ -1,7 +1,6 @@
 {
-  "id": "eb084454-d900-11e4-a7e5-0025904e7aec",
-  "name": "Paris",
-  "code": "XX1",
+  "id": "eb58483e-d909-11e5-a8e5-0025904e7yed",
+  "surveyCode": "XX3",
   "questions": [
     {
       "type": "qcm",
@@ -14,19 +13,19 @@
         "Product 5",
         "Product 6"
       ],
-      "answer": [false, true, true, false, true, false]
+      "answer": [true, false, true, true, true, true]
     },
     {
       "type": "numeric",
       "label": "Number of products?",
       "options": null,
-      "answer": 670
+      "answer": 6200
     },
     {
       "type": "date",
       "label": "What is the visit date?",
       "options": null,
-      "answer": "2017-06-09T00:00:00.000Z"
+      "answer": "2017-10-25T12:04:50.000Z"
     }
   ]
 }

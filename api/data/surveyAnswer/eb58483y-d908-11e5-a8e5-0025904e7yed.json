@@ -1,7 +1,6 @@
 {
-  "id": "eb58483e-d909-11e5-a8e5-0025904e7yed",
-  "name": "Melun",
-  "code": "XX3",
+  "id": "eb58483y-d908-11e5-a8e5-0025904e7yed",
+  "surveyCode": "XX3",
   "questions": [
     {
       "type": "qcm",
@@ -14,7 +13,7 @@
         "Product 5",
         "Product 6"
       ],
-      "answer": [true, false, true, true, true, true]
+      "answer": [true, true, true, true, true, true]
     },
     {
       "type": "numeric",
@@ -26,7 +25,7 @@
       "type": "date",
       "label": "What is the visit date?",
       "options": null,
-      "answer": "2017-10-25T12:04:50.000Z"
+      "answer": "2017-08-25T12:04:50.000Z"
     }
   ]
 }
