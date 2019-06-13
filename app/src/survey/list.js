@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import styles from './list.module.css';
 
 export default class SurveyList extends Component {
   state = {
@@ -13,8 +14,8 @@ export default class SurveyList extends Component {
 
   render() {
     return (
-      <main>
-        <h2>Surveys</h2>
+      <main class={styles.wrapper}>
+        <h2 class={styles.title}>Surveys</h2>
         {this.renderSurveys()}
       </main>
     );
@@ -28,7 +29,7 @@ export default class SurveyList extends Component {
 
     const rows = surveys.map(survey => {
       return (
-        <tr key={survey.id}>
+        <tr key={survey.id} class={styles.row}>
           <td>{survey.name}</td>
           <td>{survey.code}</td>
         </tr>
@@ -36,7 +37,7 @@ export default class SurveyList extends Component {
     });
 
     return (
-      <table>
+      <table class={styles.list}>
         <thead>
           <tr><th>Name</th><th>Code</th></tr>
         </thead>

@@ -1,0 +1,16 @@
+.wrapper {
+  padding: 1em;
+}
+
+.title {
+  text-align: center;
+}
+
+.list {
+  border: solid 1px #000;
+  width: 100%;
+}
+
+.row:hover {
+  background: #ccc;
+}
