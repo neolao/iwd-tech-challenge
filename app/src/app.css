@@ -1,0 +1,25 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.header {
+  border-bottom: solid 1px #000;
+  padding: .5em 1em;
+  display: flex;
+  align-items: center;
+}
+
+.title {
+  margin: 0;
+}
+
+.mainNavigation {
+  flex: 1;
+  text-align: center;
+}
+
+.link {
+  margin: 0 1em;
+}
